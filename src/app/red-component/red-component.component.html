@@ -1,0 +1,12 @@
+
+  <div class="turnColor"
+  style="color:red" (click)="onSelect()"
+  [md-menu-trigger-for]="menu">
+  {{params.value}}
+  <md-menu x-position="after" #menu="mdMenu">
+      <button md-menu-item> Refresh </button>
+      <button md-menu-item> Settings </button>
+      <button md-menu-item> Help </button>
+      <button md-menu-item disabled> Sign Out </button>
+    </md-menu>
+  </div>
